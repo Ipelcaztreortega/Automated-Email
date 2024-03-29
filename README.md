@@ -18,16 +18,17 @@ The structure of the function in App.js on if I can improve it.
 
 1. The project requires [Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs) to be installed on your device. 
 
+2. **Fork the Repository**: Click on the "Fork" button on the top right corner of the GitHub repository page to create a copy of the repository under your GitHub account.
 
-2. Clone the repository from my repository in your terminal
+3. Clone the repository from your repository to your local machine in your terminal
    ```bash
    git clone https://github.com/yourusername/your-repo.git
 
-3. Install dependencies in your terminal
+4. Install dependencies in your terminal
     ```bash
     npm install nodemailer node-cron dotenv
 
-4. Second, go into your .env file and fill in the information for Email_Address that will send the email, the [Email_Password](https://support.google.com/mail/thread/205453566/how-to-generate-an-app-password?hl=en) (since we are using sensitive information, use gmail app password)
+5. Second, go into your .env file and fill in the information for Email_Address that will send the email, the [Email_Password](https://support.google.com/mail/thread/205453566/how-to-generate-an-app-password?hl=en) (since we are using sensitive information, use gmail app password)
 
 
 ## How to Run Application
@@ -35,3 +36,7 @@ The structure of the function in App.js on if I can improve it.
 1. On the terminal now run the command in the background as long as the terminal is not killed
     ```bash
     node App.js &
+
+2. In order to kill the background process, either close out the terminal or use the command
+    ```bash
+    kill $PID
