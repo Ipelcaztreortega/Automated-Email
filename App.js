@@ -36,7 +36,7 @@ function sendEmail() {
 }
 
 // Schedule sending email daily at 10 AM EST
-cron.schedule('5 20 * * *', () => {
+cron.schedule('0 10 * * *', () => {
   console.log('Scheduling email...');
   sendEmail();
 }, {
